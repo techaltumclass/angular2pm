@@ -1,0 +1,27 @@
+<div class="row">
+  <div class="col-md-6 p-3 border bg-light">
+    <h3>Employee List</h3>
+    <ul class="list-group">
+      <li class="list-item" *ngFor="let emp of employees">
+        <a>{{emp.name}}</a>
+      </li>
+    </ul>
+  </div>
+  <div class="col-md-6 p-3 border bg-light">
+    <h3>Department List</h3>
+    <!-- load department data...... -->
+    <ul class="list-group">
+      <li class="list-item" *ngFor="let department of employeedepartment">
+        <a>{{ department.name }} {{"-"}}
+          <ul>
+            <li *ngFor="let emplist of department.employeelist">
+              {{emplist.name}}
+            </li>
+          </ul>
+        </a>
+      </li>
+    </ul>
+
+  </div>
+</div>
+<!-- </div> -->
