@@ -5,12 +5,14 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { TypescriptComponent } from './typescript/typescript.component';
 import { AppService } from './app.service';
+import { ChnageclassDirective } from './chnageclass.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    TypescriptComponent
+    TypescriptComponent,
+    ChnageclassDirective
   ],
   imports: [
     BrowserModule,
