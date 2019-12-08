@@ -1,7 +1,7 @@
 import { Directive, ElementRef, Renderer2, HostListener } from '@angular/core';
 
 @Directive({
-  selector: '[appChnageclass]'
+  selector: '[Input][appChnageclass]'
 })
 export class ChnageclassDirective {
 

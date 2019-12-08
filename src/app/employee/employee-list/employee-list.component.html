@@ -1,1 +1,12 @@
-<p>employee-list works!</p>
+<div>
+    <ul>
+        <li *ngFor="let item of empList" style="color:black" (click)="onClick(item.name)">
+            {{ item.name }} - {{ item.salary }}
+        </li>
+    </ul>
+</div>
+
+
+<app-employee-details [name]="clickedName">
+
+</app-employee-details>

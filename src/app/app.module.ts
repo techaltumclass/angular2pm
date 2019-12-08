@@ -6,17 +6,24 @@ import { HomeComponent } from './home/home.component';
 import { TypescriptComponent } from './typescript/typescript.component';
 import { AppService } from './app.service';
 import { ChnageclassDirective } from './chnageclass.directive';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { EmployeeListComponent } from './employee/employee-list/employee-list.component';
+import { EmployeeDetailsComponent } from './employee/employee-details/employee-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     TypescriptComponent,
-    ChnageclassDirective
+    ChnageclassDirective,
+    EmployeeListComponent,
+    EmployeeDetailsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [AppService],
   bootstrap: [AppComponent]
