@@ -1,0 +1,1 @@
+https://stackblitz.com/edit/angular-output-example?file=src%2Fapp%2Fparent%2Fparent.component.ts
