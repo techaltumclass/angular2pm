@@ -5,3 +5,5 @@ https://stackblitz.com/edit/angular-custom-input-type-number?file=app%2Fshared%2
 
 Output Input
 https://stackblitz.com/edit/angular-custom-input-type-number?file=app%2Fapp.component.ts
+
+demo
