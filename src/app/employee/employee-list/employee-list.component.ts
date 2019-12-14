@@ -40,10 +40,10 @@ export class EmployeeListComponent implements OnInit {
 
   onClick(emp: Employee) {
     console.log(emp);
-    this.clickedEmp = emp;
-    // this.router.navigate(['details', emp.id,
-    //   emp.name,
-    //   emp.salary]);
+    // this.clickedEmp = emp;
+    this.router.navigate(['details', emp.id,
+      emp.name,
+      emp.salary]);
   }
 
 }

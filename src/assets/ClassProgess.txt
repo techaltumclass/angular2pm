@@ -2,3 +2,6 @@ https://stackblitz.com/edit/angular-output-example?file=src%2Fapp%2Fparent%2Fpar
 
 Shared Components / Input /Output
 https://stackblitz.com/edit/angular-custom-input-type-number?file=app%2Fshared%2Fcomponents%2Fng-cint.component.ts
+
+Output Input
+https://stackblitz.com/edit/angular-custom-input-type-number?file=app%2Fapp.component.ts
