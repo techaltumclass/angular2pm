@@ -1,1 +1,11 @@
-<p>{{empName}} is clicked!</p>
+
+	<div style="margin:10px">
+		
+			<div *ngIf="emp">
+				<h2>{{emp.name}} details!</h2>
+                <div><label>id: </label>{{emp.id}}</div>
+                <div><label>name: </label>{{emp.name}}</div>
+				<div><label>Salary: </label> {{emp.salary}}</div>
+			</div>
+		
+	</div>

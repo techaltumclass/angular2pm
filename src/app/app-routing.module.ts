@@ -17,11 +17,11 @@ const routes: Routes = [
     component: HomeComponent
   },
   {
-    'path': 'employee',
+    'path': 'employee-list',
     component: EmployeeListComponent
   },
   {
-    'path': 'employee-details',
+    'path': 'details/:id/:name/:salary',
     component: EmployeeDetailsComponent
   },
   {

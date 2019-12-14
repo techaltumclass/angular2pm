@@ -9,10 +9,12 @@ export class AppService {
             {
                 id: 1,
                 name: 'ABC',
+                salary:'2312'
             },
             {
                 id: 2,
-                name: 'XYX'
+                name: 'XYX',
+                salary: '23423'
             }
         ]
 
