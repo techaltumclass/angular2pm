@@ -9,6 +9,7 @@ import { ChnageclassDirective } from './chnageclass.directive';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { EmployeeListComponent } from './employee/employee-list/employee-list.component';
 import { EmployeeDetailsComponent } from './employee/employee-details/employee-details.component';
+import { CustomTextPipe } from './pipes/custom-text.pipe';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { EmployeeDetailsComponent } from './employee/employee-details/employee-d
     TypescriptComponent,
     ChnageclassDirective,
     EmployeeListComponent,
-    EmployeeDetailsComponent
+    EmployeeDetailsComponent,
+    CustomTextPipe
   ],
   imports: [
     BrowserModule,

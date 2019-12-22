@@ -1,11 +1,12 @@
 <div>
     <ul>
         <li *ngFor="let item of empList" style="color:black" (click)="onClick(item)">
-            {{ item.id }} : {{ item.name }} - {{ item.salary }}
+            {{ item.id }} : {{ item.name }} - {{ item.salary | customText}}
         </li>
     </ul>
 </div>
 
+<div> Employee | customText</div>
 
 <app-employee-details [name]="clickedName" [emp]="clickedEmp">
 
