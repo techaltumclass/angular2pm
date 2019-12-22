@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, AfterViewInit, AfterContentInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { Employee } from 'src/app/data.model';
 
@@ -7,16 +7,18 @@ import { Employee } from 'src/app/data.model';
   templateUrl: './employee-details.component.html',
   styleUrls: ['./employee-details.component.scss']
 })
-export class EmployeeDetailsComponent implements OnInit {
+export class EmployeeDetailsComponent implements OnInit, AfterViewInit, AfterContentInit {
 
   @Input('name') empName;
   @Input('emp') emp: Employee;
 
+  employee = new Employee(18, 'Dr IQ', 'this.powers[0]');
   constructor(private readonly route: ActivatedRoute) {
     console.log(this.emp);
   }
 
   ngOnInit() {
+    // this.employee = { name: 'Nee name', id: 10, salary: '10230' };
     console.log(this.emp);
     this.route.params.subscribe((params: Employee) => {
       this.emp = params;
@@ -25,6 +27,17 @@ export class EmployeeDetailsComponent implements OnInit {
 
   }
 
+  ngAfterContentInit() {
+    this.employee = this.emp;
+  }
 
+  ngAfterViewInit() {
+    this.employee = this.emp;
+  }
+
+
+  mySubmitMethod() {
+    alert(JSON.stringify(this.emp));
+  }
 
 }

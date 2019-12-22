@@ -5,3 +5,7 @@ https://stackblitz.com/edit/angular-custom-input-type-number?file=app%2Fshared%2
 
 Output Input
 https://stackblitz.com/edit/angular-custom-input-type-number?file=app%2Fapp.component.ts
+
+
+ngModel: 
+https://stackblitz.com/angular/ymagmgbovvq?file=src%2Fapp%2Fhero.ts
