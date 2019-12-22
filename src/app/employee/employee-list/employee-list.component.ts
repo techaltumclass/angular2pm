@@ -12,6 +12,7 @@ export class EmployeeListComponent implements OnInit {
   empList: any = [];
   clickedEmp: Employee;
   clickedName = 'Default';
+  employee = new Employee(18, 'Dr IQ', 'this.powers[0]');
   constructor(private router: Router) { }
 
   ngOnInit() {
