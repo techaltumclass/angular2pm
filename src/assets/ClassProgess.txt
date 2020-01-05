@@ -9,3 +9,6 @@ https://stackblitz.com/edit/angular-custom-input-type-number?file=app%2Fapp.comp
 
 ngModel: 
 https://stackblitz.com/angular/ymagmgbovvq?file=src%2Fapp%2Fhero.ts
+
+reactive Forms:
+https://stackblitz.com/edit/angular-8-reactive-form-validation?file=app%2Fapp.component.html

@@ -1,0 +1,42 @@
+<div class="container" >
+    <h1>Employee Template Driven Form </h1>
+    <form (ngSubmit)="mySubmitMethod()">
+      <div class="form-group" >
+        <label >Name</label>
+        <input type="text" class="form-control" name="nameFirst" [(ngModel)]="formData.employee.name">
+      </div>
+
+      <div class="form-group">
+        <label for="alterEgo">Alter Ego</label>
+        <input type="text"  class="form-control" name="Samary" [(ngModel)]="formData.employee.salary">
+      </div>
+
+
+      <button type="submit" class="btn btn-success">Submit</button>
+
+      {{formData.employee | json}}
+    </form>
+</div>
+
+<br>
+<hr>
+
+<div class="container">
+    <form [formGroup]="formGroup" (ngSubmit)="onSubmit()">
+        <div class="form-group" >
+            <label >Name</label>
+            <input type="text" class="form-control" [ngClass]="{'alert-danger': formGroup.controls.name.touched && formGroup.controls.name.invalid}" name="name" formControlName="name">
+          </div>
+    
+          <div class="form-group">
+            <label for="alterEgo">Salary</label>
+            <input type="text"  class="form-control has-error alert-danger" name="Samary" formControlName="salary">
+            <div *ngIf="submitted && formGroup.status === 'Invalid'"> <span>this is mandatory</span></div>
+            <div *ngIf="submitted"> <span>this is mandatory</span></div>
+          </div>
+          <button type="submit" class="btn btn-success">Submit</button>
+
+          {{ formGroup.status | json}}
+          {{ formGroup.value | json}}
+        </form>
+</div>

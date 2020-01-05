@@ -10,6 +10,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { EmployeeListComponent } from './employee/employee-list/employee-list.component';
 import { EmployeeDetailsComponent } from './employee/employee-details/employee-details.component';
 import { CustomTextPipe } from './pipes/custom-text.pipe';
+import { AddUpdateEmployeeComponent } from './add-update-employee/add-update-employee.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { CustomTextPipe } from './pipes/custom-text.pipe';
     ChnageclassDirective,
     EmployeeListComponent,
     EmployeeDetailsComponent,
-    CustomTextPipe
+    CustomTextPipe,
+    AddUpdateEmployeeComponent
   ],
   imports: [
     BrowserModule,
